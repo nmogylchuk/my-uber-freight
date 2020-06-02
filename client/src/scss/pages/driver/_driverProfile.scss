@@ -1,0 +1,67 @@
+.driver-profile {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px;
+  &::after {
+    content: "";
+    background-image: url("../../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__image-wrapper {
+    margin: 20px auto;
+  }
+
+  &__image {
+    width: 80%;
+    border-radius: 60%;
+    border: 1px solid $yellow;
+    box-shadow: $box-shadow-yellow;
+  }
+
+  &__info {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    border: 1px solid $yellow;
+  }
+
+  &__characteristic {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+  }
+
+  &__element {
+    color: $yellow;
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  &__item {
+    padding: 5px;
+  }
+}
+
+.password-change__button {
+  min-width: 150px;
+  min-height: 40px;
+  padding: 10px;
+  margin: 10px 0;
+}

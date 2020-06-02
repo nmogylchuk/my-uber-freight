@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: $background-color;
+  overflow-x: hidden;
+  color: $font-color;
+  font-family: 'Baloo Thambi 2', cursive;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: $font-color;
+  cursor: pointer;
+}
+
+.form {
+  width: 50%;
+  border: 1px solid $yellow;
+  margin: 40px auto;
+  &__wrapper {
+    margin: 20px;
+  }
+}
+
+.button {
+  border: 1px solid #ffffff;
+  font-size: $button-font-size;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  color: $button-font-color;
+  background-color: $button-background-color;
+  transition: all ease 0.2s;
+  &:hover {
+    background-color: $button-background-color-hover;
+  }
+}
+
+.title {
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $yellow;
+}
+
+.input__field {
+  height: 30px;
+  width: 97%;
+  font-size: 10px;
+  font-style: italic;
+  padding: 0 10px;
+  border: 1px solid $yellow;
+  margin: 10px auto;
+  background: transparent;
+  color: $font-color;
+  background: rgba(0, 0, 0, 0.5);
+  &:focus {
+    border: 1px solid $red;
+  }
+}
+
+.error {
+  color: $red;
+}
+
+.block {
+  max-width: 100%;
+}
+
+.fas, .far {
+  color: $yellow;
+  padding-right: 10px;
+  width: 25px;
+}

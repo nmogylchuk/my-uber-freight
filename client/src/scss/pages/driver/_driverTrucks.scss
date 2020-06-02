@@ -1,0 +1,88 @@
+.truck {
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+    }
+
+  &__description {
+    text-align: center;
+    line-height: 0.8;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  &__parameters {
+    margin: 20px 0;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    min-width: 300px;
+    border: 1px solid $yellow;
+    box-shadow: $box-shadow-yellow;
+    padding: 10px;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    &:hover {
+      box-shadow: $box-shadow-red;
+      border: 1px solid $red;
+    }
+  }
+  &__maker,
+  &__model {
+    text-align: center;
+    color: $yellow;
+  }
+
+  &__button {
+  min-width: 90px;
+  min-height: 20px;
+  padding: 10px;
+  margin: 5px auto;
+}
+}
+
+.toggle {
+  &__item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  &__label {
+    padding: 10px;
+    text-align: center;
+    color: $yellow;
+    font-weight: bold;
+  }
+
+  &__element {
+    margin: 5px;
+    border: 1px solid $yellow;
+    box-shadow: $box-shadow-yellow;
+  }
+}
+
+.button-create {
+  min-width: 140px;
+  min-height: 40px;
+  padding: 10px;
+  margin: 10px auto;
+}
+

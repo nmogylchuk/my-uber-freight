@@ -1,0 +1,5 @@
+{
+    "port": 5000,
+    "mongoUri": "mongodb://localhost:27017/uber_demo",
+    "jwtSecret": "node-homework-3"
+}

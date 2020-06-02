@@ -1,0 +1,49 @@
+.driver-welcome {
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__container {
+    margin: 30px;
+    padding: 10px;
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  & .advantages {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    &__item {
+      line-height: 1.5;
+      padding: 5px;
+      &-mark {
+        color: $yellow;
+      }
+    }
+  }
+
+  &__figure {
+    text-align: center;
+  }
+
+  &__photo {
+    width: 40%;
+    margin: 30px;
+  }
+}

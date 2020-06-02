@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+//common
+@import './common/variables';
+@import './common/mixins';
+
+//core
+@import './core/_header';
+@import './core/_generic';
+@import './core/_footer';
+
+//pages
+@import './pages/_welcome';
+@import './pages/_signin';
+@import './pages/_signup';
+@import './pages/_logout';
+@import './pages/_error';
+
+//pages/driver
+@import './pages/driver/_driverWelcome';
+@import './pages/driver/_driverProfile';
+@import './pages/driver/_driverPassword';
+@import './pages/driver/_driverTrucks';
+@import './pages/driver/_driverTruckCreate';
+
+//pages/shipper
+@import './pages/shipper/_shipperWelcome';
+@import './pages/shipper/_shipperProfile';
+@import './pages/shipper/_shipperProfileDelete';
+@import './pages/shipper/_shipperPassword';
+@import './pages/shipper/_shipperLoad';
+@import './pages/shipper/_shipperLoadView';
+@import './pages/shipper/_shipperLoadCreate';

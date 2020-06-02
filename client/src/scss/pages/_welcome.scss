@@ -1,0 +1,68 @@
+.welcome {
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__container {
+    margin: 50px 0;
+    position: absolute;
+  }
+
+  &__description {
+    text-align: center;
+    line-height: 2;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    border: 2px solid $yellow;
+    box-shadow: $box-shadow-yellow;
+    min-width: 350px;
+    padding: 2em;
+    margin: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    &:hover {
+      box-shadow: $box-shadow-red;
+      border: 2px solid $red;
+    }
+    & .item {
+      &__type {
+        font-size: 5em;
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__button {
+    min-width: 150px;
+    min-height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+  }
+
+  &__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

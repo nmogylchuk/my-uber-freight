@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  margin: 0;
+  color: #787878;
+  background: #000000;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 20px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 5px;
+    margin: 5px;
+  }
+
+  &__mail,
+  &__phone {
+    padding: 5px;
+  }
+
+  &__owner,
+  &__address {
+    padding: 5px;
+  }
+
+  &__link {
+    color: #787878;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
+.fab {
+  margin: 5px;
+  color: #787878;
+  &:hover {
+    color: $yellow;
+  }
+}

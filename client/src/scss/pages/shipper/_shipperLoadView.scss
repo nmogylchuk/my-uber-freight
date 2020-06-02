@@ -1,0 +1,63 @@
+.load-view {
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__block {
+    width: 60%;
+    margin: 20px auto;
+    line-height: 1;
+    border: 1px solid $yellow;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
+
+  &__subname {
+    color: $yellow;
+    padding: 10px;
+  }
+
+  &__element {
+    border: 1px solid grey;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    min-width: 230px;
+  }
+
+  &__status {
+      border: 1px solid grey;
+      min-width: 130px;
+      font-size: 16px;
+      background: rgba(0, 0, 0, 0.5);
+      color: $font-color;
+      border-radius: 0;
+  }
+
+  &__button {
+    min-width: 140px;
+    min-height: 30px;
+    padding: 10px;
+  }
+}

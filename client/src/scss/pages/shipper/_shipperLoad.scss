@@ -1,0 +1,90 @@
+.load {
+  width: 100%;
+  &::after {
+    content: "";
+    background-image: url("../../../images/welcome_background.jpg");
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &__description {
+    width: 60%;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid $yellow;
+    line-height: 0.8;
+    box-shadow: $box-shadow-yellow;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__subitem {
+    margin: 5px 0;
+  }
+
+  &__element {
+    border: 1px solid grey;
+    padding: 10px;
+    margin: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+  }
+
+  &__subname {
+    margin: 0;
+    color: $yellow;
+  }
+
+  &__status {
+    border: 1px solid grey;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.5);
+    color: $font-color;
+    border-radius: 0;
+    min-width: 120px;
+    margin: 10px;
+}
+
+  &__button {
+    min-width: 90px;
+    min-height: 20px;
+    padding: 10px;
+    margin: 5px;
+  }
+}
+
+.button__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.button-create {
+  min-width: 140px;
+  min-height: 40px;
+  padding: 10px;
+  margin: 10px auto;
+}
